@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<meta charset="utf-8">
 <head>
-	<title></title>
+	<title>Perguntas e respostas</title>
+	<link rel="stylesheet" type="text/css" href="css/indexcss.css">
 </head>
 <body>
+  <header>
+   <h1>Quiz Perguntas e Respostas</h1>
+  </header>
+<section>
+<h2>Quiz de Conhecimentos Gerais.</h2>
 <?php 
 $pergunta1 = isset($_GET['resposta3']);
 $pergunta2 = isset($_GET["resposta5"]);
@@ -61,7 +68,16 @@ else {
 }
 
 echo "5-$mensagemr5<br>";
-echo "Pontuação : $pontuacao"	
+echo "<h2>Pontuação : $pontuacao</h2>"	
 ?>
+</section>
+
+<!--COMENTARIO-RESPOSTAS
+1 - Coeficiente
+2 - 7
+3 - Tipógrafo
+4 - Tundra
+5 - 6
+-->
 </body>
 </html>
